@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  the_seed:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: node-18.16.1-bullseye
+    volumes:
+      - ..:/home/node/app
+    user: node
+    stdin_open: true
+    ports:
+      - 8080:8080

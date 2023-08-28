@@ -1,0 +1,20 @@
+// .devcontainer/devcontainer.json
+
+{
+  "name": "Node:18.16.1 Environment",
+  "service": "the_seed",
+  "dockerComposeFile": "docker-compose.yml",
+  "remoteUser": "node",
+  "workspaceFolder": "/home/node/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+    "dsznajder.es7-react-js-snippets",
+    "burkeholland.simple-react-snippets",
+		"oderwat.indent-rainbow",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"VisualStudioExptTeam.intellicode-api-usage-examples"
+	]
+    }
+  }
+}
