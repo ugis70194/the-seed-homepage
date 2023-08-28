@@ -1,13 +1,13 @@
 version: '3'
 
 services:
-  the_seed:
+  the_seed_homepage:
     build: 
       context: .
       dockerfile: Dockerfile
-    container_name: node-18.16.1-bullseye
+    container_name: the-seed-homepage
     volumes:
-      - ..:/home/node/app
+      - ../homepage:/home/node/app
     user: node
     stdin_open: true
     ports:
